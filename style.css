@@ -33,17 +33,18 @@ header {
 
 #card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 32px;
+  
 }
 
 .card {
   padding: 32px 23px;
   text-align: center;
-  
   background: #2f1212;
   border-bottom: 2px solid #c88a03;
   border-radius: 6px;
+  
 }
 
 .card h2 {
@@ -51,15 +52,12 @@ header {
   gap: 16px;
   justify-content: center;
   align-items: center;
-
   padding: 8px 16px;
   border: 1px solid #746615;
   border-radius: 6px;
-
   width: fit-content;
   margin-inline: auto;
   margin-bottom: 53px;
-
   color: #f7dd43;
 }
 
@@ -91,6 +89,44 @@ header {
   font-weight: 900;
   font-size: 36px;
   line-height: 125%;
-
   color: #e1e1e6;
+}
+
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover {
+  transform: scale(1.1);
+}
+
+.card h2:hover,
+.card ul li strong,
+.card ul li img{
+  transition: transform 0.3s;
+}
+
+.card{
+  animation: appear .7;
+  flex-direction: row-reverse;
+}
+
+.card:nth-child(1){
+  animation-delay: 3s;
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@media (min-width: 700px) {
+  #cards{
+    max-width: 670px;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
 }
