@@ -29,9 +29,12 @@ document.querySelector("#app").innerHTML = `
 
       <main id="card">
 
+      
+
       ${createCard(
         "24/11",
         "Quinta",
+
         createGame("switzerland", "7:00", "cameroon") +
           createGame("uruguay", "10:00", "southkorea") +
           createGame("portugal", "13:00", "ghana") +
@@ -42,8 +45,32 @@ document.querySelector("#app").innerHTML = `
          "25/11",
          "Quinta",
          
-           createGame("netherlands", "13:00", "equador") +
-           createGame("brazil", "16:00", "serbia")
+           createGame("gales", "07:00", "ira")+
+           createGame("catar", "10:00", "senegal")+
+           createGame("netherlands", "13:00", "equador")+
+           createGame("inglaterra", "16:00", "eua")
        )}
+
+       ${createCard(
+        "26/11",
+        "Sexta",
+
+        createGame("tunisia", "07:00", "australia")+
+          createGame("polonia", "10:00", "arabia")+
+          createGame("frança", "13:00", "dinamarca") +
+          createGame("argentina", "16:00", "mexico")
+      )}
+
+      ${createCard(
+        "26/11",
+        "Sexta",
+
+        createGame("japao", "07:00", "costarica")+
+          createGame("belgica", "10:00", "marrocos")+
+          createGame("croacia", "13:00", "canada") +
+          createGame("espanha", "16:00", "alemanha")
+      )}
+
+
       </main>
     `
