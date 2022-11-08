@@ -60,17 +60,5 @@ document.querySelector("#app").innerHTML = `
           createGame("frança", "13:00", "dinamarca") +
           createGame("argentina", "16:00", "mexico")
       )}
-
-      ${createCard(
-        "26/11",
-        "Sexta",
-
-        createGame("japao", "07:00", "costarica")+
-          createGame("belgica", "10:00", "marrocos")+
-          createGame("croacia", "13:00", "canada") +
-          createGame("espanha", "16:00", "alemanha")
-      )}
-
-
       </main>
     `
